@@ -1,0 +1,6 @@
+{
+  "name": "AvatarHype - Criador de Anúncios com IA",
+  "description": "Aprenda a criar anúncios de alta conversão usando inteligência artificial, personagens digitais, clonagem de imagem e voz.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

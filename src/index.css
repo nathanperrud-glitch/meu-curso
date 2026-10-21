@@ -1,0 +1,87 @@
+@import "tailwindcss";
+
+@theme {
+  --color-papel: #F4F1E8;
+  --color-card: #FCFBF6;
+  --color-nota: #EFEBDD;
+  --color-tinta: #16150F;
+  --color-subtexto: #59574F;
+  --color-lima: #CDF13B;
+  --color-divisoria: #C9C4B7;
+  --color-amarelo-top: #F4CB4A;
+
+  --font-brico: "Bricolage Grotesque", sans-serif;
+  --font-hanken: "Hanken Grotesk", sans-serif;
+  --font-mono: "Spline Sans Mono", monospace;
+  --font-caveat: "Caveat", cursive;
+
+  --shadow-dura-sm: 2px 2px 0px #16150F;
+  --shadow-dura: 3px 3px 0px #16150F;
+  --shadow-dura-md: 4px 4px 0px #16150F;
+  --shadow-dura-lg: 6px 6px 0px #16150F;
+  --shadow-dura-white: 3px 3px 0px #F4F1E8;
+  --shadow-dura-lima: 4px 4px 0px #CDF13B;
+}
+
+/* Caderno Fundo Quadriculado */
+.bg-grid-papel {
+  background-color: #F4F1E8;
+  background-image: 
+    linear-gradient(to right, rgba(40, 70, 120, 0.055) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(40, 70, 120, 0.055) 1px, transparent 1px);
+  background-size: 30px 30px;
+}
+
+.bg-grid-tinta {
+  background-color: #16150F;
+  background-image: 
+    linear-gradient(to right, rgba(244, 241, 232, 0.055) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(244, 241, 232, 0.055) 1px, transparent 1px);
+  background-size: 30px 30px;
+}
+
+/* Marca-texto Lima */
+.mark-lima {
+  background: linear-gradient(180deg, transparent 65%, #CDF13B 65%, #CDF13B 95%, transparent 95%);
+  display: inline;
+}
+
+.mark-lima-solid {
+  background-color: #CDF13B;
+  color: #16150F;
+  padding: 0 4px;
+}
+
+/* Espiral do Caderno Lateral */
+.spiral-track {
+  background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='10' cy='20' r='5' fill='%23C9C4B7'/%3E%3Crect x='6' y='18' width='28' height='4' rx='2' fill='%238F8A7E' stroke='%2316150F' stroke-width='1.2'/%3E%3Cellipse cx='28' cy='20' rx='3' ry='6' fill='%23AFAAA0' stroke='%2316150F' stroke-width='1.2'/%3E%3C/svg%3E");
+  background-repeat: repeat-y;
+  background-position: center top;
+  background-size: 38px 40px;
+}
+
+/* Suporte a sombras duras personalizadas */
+.box-shadow-dura-sm {
+  box-shadow: 2px 2px 0px #16150F;
+}
+.box-shadow-dura {
+  box-shadow: 3px 3px 0px #16150F;
+}
+.box-shadow-dura-md {
+  box-shadow: 4px 4px 0px #16150F;
+}
+.box-shadow-dura-lg {
+  box-shadow: 6px 6px 0px #16150F;
+}
+.box-shadow-dura-white {
+  box-shadow: 3px 3px 0px #F4F1E8;
+}
+
+/* Scrollbar invisível */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
